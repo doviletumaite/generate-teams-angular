@@ -5,7 +5,12 @@
       <li>Name 1</li>
     </ul>
     <div class="add-members-container">
-      <input type="text" placeholder="name" >
+      <input 
+      type="text" 
+      placeholder="name"
+      #addMemberInput
+      (input)="onInput(addMemberInput.value)" 
+      >
       <button (click)="addMember()">Add</button>
     </div>
 
